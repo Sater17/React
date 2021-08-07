@@ -1,0 +1,13 @@
+div{
+    background-color: aqua;
+}
+div ul{
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    list-style: none;
+}
+div ul li{
+    padding: 15px;
+    font-size: 30px;
+}
