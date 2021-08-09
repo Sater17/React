@@ -1,20 +1,13 @@
 import React from 'react'
-import { Route,Link, Switch,BrowserRouter as Router } from 'react-router-dom'
-import Header from './Header/header.js'
-import PageOne from "./page1.js";
+import ListCard from './Shop/Shop.js';
+import Payment from './Pay/Pay';
 
-const App = function(){
-    return(
+function App() {
+    return (
         <div>
-            <Router>
-                <Header></Header>
-                <Switch>
-                    <Router path='/page1' exact>
-                        <PageOne></PageOne>
-                    </Router>
-                </Switch>
-            </Router>
+            <ListCard></ListCard>
+            <Payment></Payment>
         </div>
     )
 }
-export default App
+export default App;
