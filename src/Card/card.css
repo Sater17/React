@@ -1,0 +1,13 @@
+.card{
+    background-color:peachpuff ;
+    border-radius: 10px;
+    line-height: 0.5;
+    display: inline-block;
+    margin: 10px;
+}
+.card p{
+    padding-left: 5px;
+}
+.card button{
+    margin:5px
+}

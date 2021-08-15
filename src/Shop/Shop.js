@@ -1,6 +1,7 @@
 import React from 'react'
-import Card from './Card'
-import Data from './Data';
+import Card from '../Card/Card'
+import Data from '../Data';
+import './shop.css'
 
 function Shop(props){
     

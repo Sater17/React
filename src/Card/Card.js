@@ -1,4 +1,5 @@
 import React from 'react'
+import './card.css'
 
 function Card(props) {
     return (
@@ -11,6 +12,7 @@ function Card(props) {
             <p>{props.color}</p>
             <p>{props.material}</p>
             <img src={props.img}></img>
+            <button>Add to Bag</button>
         </div>
     )
 }
