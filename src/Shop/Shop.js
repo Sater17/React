@@ -18,8 +18,9 @@ function Shop(props){
                 form={props.data[value].form}
                 color={props.data[value].color}
                 material={props.data[value].material}
-                img={props.data[value].img}></Card>
-
+                img={props.data[value].img}
+                clickHandler={props.onClick}></Card>
+                
             )})}
         </div>
     )

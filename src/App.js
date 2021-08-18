@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Shop from './Shop/Shop.js'
 import Add from './Add'
 import postData, { getEndpoint, addEndpoint } from './api.js'
@@ -43,10 +43,18 @@ function App() {
     //         }
     //     }).catch((e) => { console.log(e) })
 
+    let count =useRef(0)
+    function clickHandler(e){
+        console.log('as')
+        count.current+=1
+        console.log(count.current)
+    }
 
     return (
         <div className='app'>
-            <Shop data={cloth}></Shop>
+            <Shop data={cloth}
+            onClick={clickHandler}></Shop>
+            
             <Add onSubmit={handleSubmit}></Add>
         </div>
     )
